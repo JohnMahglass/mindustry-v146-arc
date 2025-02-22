@@ -272,7 +272,7 @@ public class Settings{
 
     /** Returns the directory where all settings and data is placed. */
     public Fi getDataDirectory(){
-        return dataDirectory == null ? Core.files.absolute(OS.getAppDataDirectoryString(appName)) : dataDirectory;
+        return dataDirectory == null ? Core.files.absolute("./") : dataDirectory;
     }
 
     /** Sets the settings file where everything is written to. */
